@@ -1,0 +1,139 @@
+/* cart page container */
+
+.cart-container{
+   margin-top: 150px;
+  background-color: black;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* cart product card */
+
+.cart-card{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  color: white;
+  transition: 0.3s;
+}
+
+/* hover effect */
+
+.cart-card:hover{
+  transform: scale(1.02);
+}
+
+/* product image */
+
+.cart-card img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* product info */
+
+.cart-info{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* title */
+
+.cart-info h3{
+  font-size: 18px;
+  color: white;
+}
+
+/* price */
+
+.cart-info h4{
+  color: #00ffae;
+  font-size: 18px;
+}
+
+/* quantity box */
+
+.qty-box{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+/* quantity buttons */
+
+.qty-box button{
+  padding: 6px 12px;
+  border: none;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.qty-box button:hover{
+  background-color: #444;
+}
+
+/* quantity number */
+
+.qty-box span{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* remove button */
+
+.remove{
+  margin-top: 8px;
+  background-color: red;
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove:hover{
+  background-color: #c40000;
+}
+
+/* total section */
+
+.cart-total{
+  margin-top: 30px;
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* payment button */
+
+.pay-btn{
+  padding: 12px 25px;
+  background-color: #00ffae;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pay-btn:hover{
+  background-color: #00c98b;
+}

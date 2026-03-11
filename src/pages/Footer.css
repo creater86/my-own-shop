@@ -1,0 +1,53 @@
+.intro{
+    padding: 10px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px gray;
+}
+.customer{
+  color: white;
+    width: 100%;
+     display: flex;
+   justify-content: center;
+   padding: 10px;
+}
+.Need{
+    margin-top: 50px;
+
+}
+.more {
+    cursor: pointer;
+    margin-top: 50px;
+    
+    }
+
+
+.about{
+  color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+
+}
+.abouts{
+     background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none; /* underline remove */
+  color: white;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: red; /* hover la red color */
+}

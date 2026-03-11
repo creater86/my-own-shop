@@ -1,0 +1,72 @@
+.no-result{
+  grid-column: 1 / -1;
+  text-align:center;
+  font-size:64px;
+  color:red;
+  margin-top:50px;
+}
+.Product-Container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+   padding: 30px;
+   background-color: rgb(46, 46, 46);
+  
+    
+}
+.PathSlider{
+  
+    width: 350px;
+    height: auto;
+    border: 1px solid rgb(223, 219, 219);
+    border-radius: 30px;
+   cursor: pointer;
+  box-shadow: 0px 0px 20px 0px;
+
+
+}
+.PathSlider img{
+  
+   width: 350px;
+   height: 370px;
+   border-radius: 30px;
+}
+.para{
+    padding: 2px;
+    color: white;
+    margin: 10px;
+}
+.collection-title{
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  animation: moveTitle 2s ease forwards;
+}
+
+@keyframes moveTitle{
+
+  0%{
+    transform: translate(-300px,-200px) rotate(-180deg);
+    opacity:0;
+  }
+
+  50%{
+    transform: translate(100px,-50px) rotate(90deg);
+    opacity:0.5;
+  }
+
+  100%{
+    transform: translate(0,0) rotate(0deg);
+    opacity:1;
+  }
+
+
+}
+.collection-title {
+  font-family: 'Cinzel', serif;
+  background: linear-gradient(to bottom, #d4af37 0%, #fef9c3 50%, #b0892d 100%);
+  
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-shadow: 0 0 5px rgba(176, 137, 45, 0.3);
+}

@@ -1,23 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+
+import WomenDress from './pages/WomenDress';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import ShowProduct from './pages/ShowProduct';
+
+import { useEffect } from "react";
+
 
 function App() {
+
+ const [cart,setCart] = useState(()=>{
+  const savedCart = sessionStorage.getItem("cart")
+  return savedCart ? JSON.parse(savedCart) : []
+})
+useEffect(()=>{
+  sessionStorage.setItem("cart", JSON.stringify(cart))
+},[cart])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Router>
+
+        <Routes>
+
+          <Route path='/' element={<Home/>}/>
+
+          <Route path='/Product/:id' element={
+            <ShowProduct cart={cart} setCart={setCart}/>
+          }/>
+
+          <Route path='/womenDress' element={<WomenDress/>}/>
+
+          <Route path='/navigation' element={
+            <Cart cart={cart} setCart={setCart}/>
+          }/>
+
+        </Routes>
+
+      </Router>
+
     </div>
   );
 }
