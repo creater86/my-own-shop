@@ -62,8 +62,8 @@ function Header() {
           </div>
 
           <div className='center-logo'>
-            <img src='/RuleBreakers.jpeg' alt='WELCOME RULEBREAKER'/>
-            <img src='/butterflyb.png' className='butterfly' alt='🦋'/>
+            <img src={process.env.PUBLIC_URL +'/RuleBreakers.jpeg' }alt='WELCOME RULEBREAKER'/>
+            <img src={process.env.PUBLIC_URL +'/butterflyb.png'} className='butterfly' alt='🦋'/>
           </div>
 
           <section className='right-container'>

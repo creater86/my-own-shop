@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import './Nav.css'
 
 const images = [
-  '/shirt.avif',
-  '/1.avif',
-  '/2.avif',
-  '/3.avif',
-  '/4.avif'
+  process.env.PUBLIC_URL + '/shirt.avif',
+  process.env.PUBLIC_URL + '/1.avif',
+  process.env.PUBLIC_URL + '/2.avif',
+  process.env.PUBLIC_URL + '/3.avif',
+  process.env.PUBLIC_URL + '/4.avif'
 ];
 
 export const Nav = () => {
